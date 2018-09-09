@@ -1,0 +1,49 @@
+<?php include ("bawangye.html"); ?>
+<style>.table input{width: 100%;height: 100%;border: 0;background: #f7f9fa;}</style>
+<button id="submit" class="btn btn-info">增加</button>
+<table class="table table-bordered ">
+    <tr>
+        <th>id</th>
+        <th>cid</th>
+        <th>title</th>
+        <th>dsc</th>
+        <th>image</th>
+        <th>url</th>
+        <th>create_time</th>
+        <th>操作</th>
+    </tr>
+    <?php foreach ($stmt as $k=>$v){ ?>
+    <tr data-id="<?php echo $v['id'] ?>"  >
+        <td >  <?php echo $v["id"]?> </td>
+        <td><input data-type="cid" type="text" value="<?php echo $v['cid'] ?>"></td>
+        <td><input data-type="title" type="text" value="<?php echo $v['title'] ?>"></td>
+        <td><input data-type="dsc" type="text" value="<?php echo $v['dsc'] ?>"></td>
+        <td><input data-type="image" type="text" value="<?php echo $v['image']?>"></td>
+        <td><input data-type="url" type="text" value="<?php echo $v['url']?>"></td>
+        <td><input data-type="create_time" type="text" value="<?php echo $v['create_time']?>"></td>
+        <td class="remove">删除</td>
+    </tr>
+    <?php } ?>
+
+</table>
+<ul id="pagination-demo" class="pagination-sm" style="height: 50px;"></ul>
+
+
+
+<script>
+    $(function(){
+        $('#pagination-demo').twbsPagination({
+            totalPages: <?php echo $page_total?>,
+        visiblePages: 3,
+            startPage:<?php echo $page?>,
+        onPageClick: function (event, page) {
+            console.log(page);
+            if(page != <?php echo $page?>){
+                location.href="/bawangye.php?c=newss&m=actionview&page="+ page;
+            }
+        }
+    });
+    })
+</script>
+
+<?php include ("bawangye-a.html"); ?>

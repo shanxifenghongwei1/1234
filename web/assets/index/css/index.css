@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-top-highlight-color: transparent;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.nave {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.88rem;
+    background: #d43d3d;
+    padding: 0 0.25rem;
+}
+
+.nave ul {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.nave li span.iconfont {
+    font-size: 0.3rem;
+}
+
+.nave ul li {
+    line-height: 0.88rem;
+    font-size: 0.18rem;
+}
+
+.nave ul li:nth-child(2) {
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+.nave ul li:nth-child(3){
+    padding: 0.2rem;
+}
+.nave ul li:nth-child(3) span.iconfont{
+    color: white;
+}
+.nave ul li:nth-child(3) p {
+    line-height: 0.5rem;
+    text-align: center;
+
+}
+.option {
+    height: 0.72rem;
+    width: 18.16rem;
+    background: #f4f5f6;
+    padding: 0 0.25rem;
+
+}
+
+.option ul {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.option li {
+    font-size: 0.3rem;
+    line-height: 0.72rem;
+    margin:0 0.1rem;
+
+}
+.option li.active a {
+    color: red;
+}
+.option .add {
+    width: 0.6rem;
+    height: 0.72rem;
+    background: #a253ff;
+    color: red;
+    line-height: 0.19rem;
+    text-align: center;
+    position: fixed;
+    right: 0rem;
+    top: 0.88rem;
+}
+
+.fixation {
+    position: fixed;
+    top: 0.88rem;
+    left: 0;
+    width: 7.5rem;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.content {
+    width: 100%;
+    margin-top: 1.76rem;
+}
+
+.list {
+    padding: 0.32rem 0.25rem;
+    width: 100%;
+    height: 2.2rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.01rem solid #f6f6f6;
+}
+
+.heart {
+    height: 1.47rem;
+}
+
+.heart p {
+    line-height: 1rem;
+    font-size: 0.32rem;
+}
+
+.heart h1 {
+    font-size: 0.12rem;
+    color: #c5c5c5;
+}
+
+.heart h1 span {
+    width: 0.24rem;
+    height: 0.15rem;
+    color: red;
+    border: 0.01rem solid #fdd5d5;
+    font-size: 0.08rem;
+}
+
+.list .picture img {
+    width: 2.27rem;
+    height: 1.47rem;
+}
+
+.list-one {
+    background: white;
+    padding: 0.32rem 0.25rem;
+    width: 100%;
+    height: 2.2rem;
+    border-bottom: 0.01rem solid #f6f6f6;
+}
+
+.list-one p {
+    line-height: 0.6rem;
+    font-size: 0.32rem;
+}
+
+.list-one h1 {
+    font-size: 0.12rem;
+    color: #c5c5c5;
+}
+
+.list-one span {
+    width: 0.24rem;
+    height: 0.15rem;
+    color: red;
+    border: 0.01rem solid #fdd5d5;
+    font-size: 0.08rem;
+}
+
+.list-two {
+    background: white;
+    padding: 0.32rem 0.25rem;
+    width: 100%;
+    height: 2.8rem;
+    border-bottom: 0.01rem solid #f6f6f6;
+}
+
+.list-two p {
+    line-height: 0.6rem;
+    font-size: 0.32rem;
+}
+
+.list-two .img-s ul {
+    display: flex;
+}
+
+.list-two ul li:nth-child(2) {
+    padding-left: 0.05rem;
+    padding-right: 0.05rem;
+}
+
+.list-two h1 {
+    font-size: 0.12rem;
+    color: #c5c5c5;
+}
+
+.list-two h1 span {
+    width: 0.24rem;
+    height: 0.15rem;
+    color: red;
+    border: 0.01rem solid #fdd5d5;
+    font-size: 0.08rem;
+}
+
+.list-two ul li img {
+    width: 2.29rem;
+    height: 1.47rem;
+}
